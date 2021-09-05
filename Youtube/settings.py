@@ -117,5 +117,5 @@ REST_FRAMEWORK = {
 
 
 #CELERY SETTINGS
-CELERY_BROKER_URL = 'amqp://localhost'
+broker_url = 'amqp://guest@rabbit'
 

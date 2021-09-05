@@ -22,6 +22,8 @@ def fetch_data():
         timestamp = Video.objects.latest('publishedAt').publishedAt
     except Video.DoesNotExist:
         logger.error(f"Using default timestamp {timestamp}")
+    except Exception as e:
+        logger.error(f"Using default timestamp {timestamp} {str(e)}")
     key_number = 0
     timestamp = timestamp.strftime('%Y-%m-%dT%H:%M:%SZ')
 
