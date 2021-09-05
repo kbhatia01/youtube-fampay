@@ -1,0 +1,16 @@
+#Cache files
+__pycache__
+*.pyc
+celerybeat-schedule.db
+
+
+# Environments Files
+env
+
+
+venv
+.venv
+.idea
+
+db.sqlite3
+docker-compose.yml
